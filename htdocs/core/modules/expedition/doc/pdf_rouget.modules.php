@@ -397,7 +397,7 @@ class pdf_rouget extends ModelePdfExpedition
 		if (empty($hidetop))
 		{
 			$pdf->SetXY($this->posxqtytoship, $tab_top+1);
-			$pdf->MultiCell(($this->page_largeur - $this->marge_droite - $this->posxqtytoship), 2, $outputlangs->transnoentities("QtyToShip"),'','C');
+			$pdf->MultiCell(($this->page_largeur - $this->marge_droite - $this->posxqtytoship), 2, $outputlangs->transnoentities("QtyShipped"),'','C');
 		}
 	}
 
